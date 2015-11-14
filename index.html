@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Behance Style Flat-UI Kit</title>
+	<link rel="stylesheet" type="text/css" href="ui_css/styles.css">
+	<script type="text/javascript" src="ui_js/jquery-1.11.2.min.js"></script>
+	<script type="text/javascript" src="ui_js/media-player.js"></script>
+	<script type="text/javascript" src="ui_js/ui_default.js"></script>
+    <!--[if IE]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+	<section class="fixedSize overflowHid">
+		<article class="left overflowHid">
+			<ul class="nav navHorz">
+				<li class="logo"><a href="#logo"></a></li>
+				<li class="active"><a href="#">activity</a></li>
+				<li><a href="#">discover</a></li>
+				<li><a href="#">my portfolio</a></li>
+				<li><a href="#">jobs</a></li>
+				<li class="menuButton right overflowHid">
+					<a href="#" class="btn btnSmall save left"></a>
+					<a href="#" class="btn btnSmall profile left"></a>
+					<a href="#" class="btn btnSmall search left"></a>
+				</li>
+			</ul> <!-- menu end -->
+			
+			<div class="clear"></div>
+
+			<div class="left" style="margin-top: 30px; margin-right: 26px;">
+				<figure>
+					<div id='media-player'>
+						<figcaption>Warm Bodies</figcaption>
+						<video id='media-video' controls>
+							<source src='video/videoplayback.mp4' type='video/mp4'>
+							<source src='video/videoplayback.webm' type='video/webm'>
+						</video>
+						<div class="blur-background"></div>
+						<div id='media-controls'>
+							<button id='play-pause-button' class='playerPlay btnPlayer' title='play' onclick='togglePlayPause();'>Play</button>
+							<progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+							<button id='mute-button' class='playerMute btnPlayer' title='mute' onclick='toggleMute("true");'>Mute</button>	
+						</div>
+					</div>	
+				</figure>
+
+				<div class="clear" style="margin: 0px 0px 40px;"></div>
+
+				<form>
+					<div class="inputGroup">
+						<input type="text" placeholder="Search..." class="formSearch">
+						<button type="submit" class="btn btnMedium searchLarge"></button>
+					</div>
+				</form>
+			</div>
+
+			<div class="right" style="margin-top: 30px;">
+				<div class="tabs taskTab">
+					<div class="tabContent" id="tab-1">
+						<span class="tabTitle">tasks completed</span>
+					</div>
+					<div class="tabContent" id="tab-2">
+						<span class="tabTitle">tasks completed</span>
+						<div class="chartWrap">
+							<canvas id="curvesChart" class="tasksChart" width="206" height="207" data-chart-segments="#1d72ef"></canvas>
+							<div class="chartStatistic"><span>83</span><span>%</span></div>
+						</div>
+					</div>
+					<div class="tabContent" id="tab-3">
+						<span class="tabTitle">events</span>
+					</div>
+					<ul class="tabMenu">
+						<li><a href="#tab-1"><span class="tasks"></span>Tasks</a></li>
+						<li><a href="#tab-2"><span class="chart"></span>Chart</a></li>
+						<li><a href="#tab-3"><span class="events"></span>Events</a></li>
+					</ul>
+				</div>
+			</div>
+		</article>
+		<article class="right overflowHid">
+			<div class="profileBox">
+				<div class="profileImg">
+					<img src="images/profileImg.png" alt="profil resmi" class="grayscale blur"/>
+					<div class="radiusImg">
+						<img src="images/radius-image.jpg" alt="profil resmi" class="grayscale"/>
+					</div>
+				</div>
+				<div class="profileText">
+					<h4><a href="#" title="Nicholas Hoult">Nicholas Hoult</a></h4>
+					<span class="profileType">Actor</span>
+				</div>
+				
+				<ul class="profileMenu">
+					<li><a href="#"><span class="seen"></span>19,249</a></li>
+					<li><a href="#"><span class="favorite"></span>2,876</a></li>
+					<li><a href="#"><span class="messages"></span>1,852</a></li>
+				</ul>
+			</div>
+
+			<div class="clear"></div>
+
+			<ul class="buttonList">
+				<li><a href="#" class="btn btnCircle backward"></a></li>
+				<li><a href="#" class="btn btnCircle pause"></a></li>
+				<li><a href="#" class="btn btnCircle forward"></a></li>
+				<li><a href="#" class="btn btnCircle play"></a></li>
+				<li><a href="#" class="btn btnCircle stop"></a></li>
+				<li><a href="#" class="btn btnCircle replay"></a></li>
+				<li><a href="#" class="btn btnCircle cut"></a></li>
+				<li><a href="#" class="btn btnCircle eject"></a></li>
+				<li><a href="#" class="btn btnCircle question"></a></li>
+				<li><a href="#" class="btn btnCircle info"></a></li>
+			</ul>
+		</article>
+	</section>
+	<section class="fixedSize overflowHid">
+		<article class="left overflowHid">
+			<ul class="nav navVertical">
+				<li class="menuButton"><a href="#" class="btn btnSmall facebook"></a></li>
+				<li class="menuButton"><a href="#" class="btn btnSmall twitter"></a></li>
+				<li class="menuButton"><a href="#" class="btn btnSmall behance"></a></li>
+				<li class="menuButton"><a href="#" class="btn btnSmall googlePlus"></a></li>
+				<li class="menuButton"><a href="#" class="btn btnSmall pinterest"></a></li>
+				<li class="menuButton"><a href="#" class="btn btnSmall linkedin"></a></li>
+			</ul> <!-- vertical social menu end -->
+			
+			<div class="clear"></div>
+
+			<div class="left" style="margin-top: 30px; margin-right: 26px;">
+			</div>
+		</article>
+		<article class="right overflowHid">
+
+		</article>
+	</section>
+</body>
+</html>

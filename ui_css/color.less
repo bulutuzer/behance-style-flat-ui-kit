@@ -1,0 +1,19 @@
+/* theme ui color */
+
+//variable and mixin colors
+
+@blue_hex: #1d72ef;
+.blue_color_rgba (@color_a){ color: rgba(29,114,239,@color_a); }
+.blue_bg_rgba (@bg_a){ background-color: rgba(29,114,239,@bg_a); }
+.blue_color { background-color: rgb(29,114,239); }
+@darkGray_hex: #222222;
+.darkGray_color_rgba (@color_a){ color: rgba(34,34,34,@color_a); }
+.darkGray_bg_rgba (@bg_a){ background-color: rgba(34,34,34,@bg_a); }
+.darkGray_color { background-color: rgb(34,34,34); }
+
+//function color
+
+.color (@color_r,@color_g,@color_b,@color_a) { color: rgba(@color_r,@color_g,@color_b,@color_a); }
+.bg_color (@bg_color_r,@bg_color_g,@bg_color_b,@bg_color_a) { background-color: rgba(@bg_color_r,@bg_color_g,@bg_color_b,@bg_color_a); }
+
+//class colors

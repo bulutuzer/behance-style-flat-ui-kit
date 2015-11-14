@@ -1,0 +1,8 @@
+/**
+ * Developer: Bulut Üzer
+ * Developer URL: http://www.bulutuzer.com
+ * Plugin Name: Behance Style Flat-UI Kit
+ * Special thanks : Eric Meyer, Ian Devlin
+*/
+
+@import "reset.css";@import "font.css";@import "color.css";@import "ui.css";body{background-color:#7e7e7e;font-family:HelveticaNeueRegular;margin:0 auto}.left{float:left}.right{float:right}.floatNone{float:none}.overflowHid{overflow:hidden}.clear{clear:both}.autoSize{width:100%;height:auto}.marginNone{margin:0}.marginAuto{margin:0 auto}.paddingNone{padding:0}.borderNone{border:0}.displayNone{display:none}.displayBlock{display:block}.positionRel{position:relative}.positionAb{position:absolute}.positionFixed{position:fixed}.textAlignCenter{text-align:center}.fixedSize{width:1100px;height:auto;margin:50px auto 0}ul.buttonList{overflow:hidden;width:306px;margin-top:20px}ul.buttonList>li{float:left;margin-right:19px;margin-top:10px}ul.buttonList>li:nth-child(5n){margin-right:0}
